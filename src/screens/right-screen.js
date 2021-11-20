@@ -8,7 +8,7 @@ import React from 'react'
 
 const RightScreen = () => {
     return(
-        <div style = {{border : '2px solid black', flex : 1}}>
+        <div className = "right-screen-main">
             Right
         </div>
     )

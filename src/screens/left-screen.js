@@ -5,7 +5,7 @@ import DataUsageIcon from '@mui/icons-material/DataUsage';
 import SearchIcon from '@mui/icons-material/Search';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import dp from '../images/dp.jpg'
-
+import ChatCard from '../components/chats-card';
 
 
 const LeftScreen = () => {
@@ -27,10 +27,68 @@ const [arrow, setArrow] = useState(false);
                 </div>
             </div>
             <div className = "left-searchbar">
-                <div>{arrow ? <ArrowBackIcon onFocus = {() => {setArrow(false)}} style={{ fontSize: 25, color : "blue"}} /> : <SearchIcon style={{ fontSize: 25}} />}
+                <div>{arrow ? <ArrowBackIcon className = "arrow" onFocus = {() => {setArrow(false)}} style={{ fontSize: 25, color : "blue"}} /> : <SearchIcon className = "searchIcon" style={{ fontSize: 25}} />}
                 <input type = "text" onFocus = {() => {setArrow(true)}} onBlur = {() => {setArrow(false)}} placeholder = "Search or start new chat" />
                 </div>
             </div>
+            <div className = "chats-container">
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+            <ChatCard />
+        </div>
         </div>
     )
 }

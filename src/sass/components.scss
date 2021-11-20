@@ -1,0 +1,103 @@
+
+
+
+
+$frndMsgColor : #998f8f;
+$dateColor : #998f8f;
+$chatHoverBg : #f6f6f6;
+$chatFocusBg : #c5c2c2;
+
+
+@font-face {
+    font-family: frndMsgFont;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Work+Sans:wght@100;200;300&display=swap');
+  }
+
+@font-face {
+    font-family: frndNameFont;
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+html{
+    font-size: 62.5%;
+}
+
+
+
+
+
+.main-chat-card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.2px solid rgb(201, 197, 197);
+    border-top: 0.1px solid rgb(201, 197, 197);
+    cursor: pointer;
+
+
+    &:hover{
+        background-color: $chatHoverBg;
+    }
+
+    &:focus{
+    background-color: $chatFocusBg;
+    }
+
+.img-div{
+flex: 1;
+margin: 4% 2%;
+
+
+img{
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+}
+
+.name-div{
+    flex: 3;
+
+
+.frnd-name{
+    font-size: 1.9rem;
+    font-family: frndNameFont, Verdana, Tahoma, sans-serif;
+    margin: 6% 0% 0% -2%;
+}
+
+.frnd-msg{
+    font-size: 1.4rem;
+    margin: 0% 0% 8% -2%;
+    font-family: frndMsgFont, Verdana, Tahoma, sans-serif;
+    color: $frndMsgColor;
+}
+}
+
+
+.date-div{
+    flex: 1;
+    margin: 0% 0 4% 0;
+
+p{
+    color: $dateColor;
+    font-size: 1.1rem;
+}
+}
+
+
+
+}

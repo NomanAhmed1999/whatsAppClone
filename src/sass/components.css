@@ -1,0 +1,98 @@
+@font-face {
+  font-family: frndMsgFont;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&family=Work+Sans:wght@100;200;300&display=swap");
+}
+
+@font-face {
+  font-family: frndNameFont;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-chat-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 0.2px solid #c9c5c5;
+  border-top: 0.1px solid #c9c5c5;
+  cursor: pointer;
+}
+
+.main-chat-card:hover {
+  background-color: #f6f6f6;
+}
+
+.main-chat-card:focus {
+  background-color: #c5c2c2;
+}
+
+.main-chat-card .img-div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 4% 2%;
+}
+
+.main-chat-card .img-div img {
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.main-chat-card .name-div {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
+.main-chat-card .name-div .frnd-name {
+  font-size: 1.9rem;
+  font-family: frndNameFont, Verdana, Tahoma, sans-serif;
+  margin: 6% 0% 0% -2%;
+}
+
+.main-chat-card .name-div .frnd-msg {
+  font-size: 1.4rem;
+  margin: 0% 0% 8% -2%;
+  font-family: frndMsgFont, Verdana, Tahoma, sans-serif;
+  color: #998f8f;
+}
+
+.main-chat-card .date-div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0% 0 4% 0;
+}
+
+.main-chat-card .date-div p {
+  color: #998f8f;
+  font-size: 1.1rem;
+}
+/*# sourceMappingURL=components.css.map */
